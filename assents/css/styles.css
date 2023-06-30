@@ -33,6 +33,19 @@ header {
     justify-content: space-between;
 }
 
+.menu {
+    display: flex;
+    
+}
+
+.menu i {
+    font-size: 36px;
+    display: none;
+}
+
+#toggle-menu {
+    display: none;
+}
 
 
 .logo-nav{
