@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:wght@600&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    text-decoration: none;
+    background: url(../image-register/register-img.jpg) no-repeat center top ;
+    background-size: cover;
+}
+
+.registro {
+    width: 500px;
+    height: 680px;
+    background:rgba(26, 100, 174, 0.735);
+    color: rgb(0, 5, 97);
+    top: 50%;
+    left:50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 10px 50px;
+    border-radius: 20px;
+}
+
+.form-reg h3 {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.registro .form-reg {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.controls {
+    width: 100%;
+    background: cornflowerblue;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid rgb(0, 65, 184);
+    font-size: 18px;
+}
+
+.form-reg p {
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.form-reg a {
+    color: white;
+    text-decoration: none;
+}
+
+.form-reg a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.form-reg .botons {
+    width: 100%;
+    background:rgb(0, 10, 151);
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 10px 0px;
+    font-size: 16px;
+    border-radius: 10px;
+}

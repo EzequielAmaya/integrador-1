@@ -1,0 +1,462 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:wght@600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Nunito', sans-serif;
+}
+
+
+body{
+    width: 100%;
+    background-color: #030303;
+    background-image: linear-gradient(225deg, #030303 0%, #8423ac 43%, #000000 72%, #3a97bc 100%);
+
+}
+
+header {
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    z-index: 1;
+    background-color: #8423ac;
+}
+
+.container--menu {
+    max-width: 1200px;
+    height: 100%;
+    margin: auto;
+    display:flex;
+    justify-content: space-between;
+}
+
+
+
+.logo-nav{
+    height: 100%;
+    display:flex;
+    align-items: center;
+}
+
+.logo-nav img {
+    width: 70px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu ul {
+    display: flex;   
+}
+
+.menu ul li {
+    margin-left: 30px;
+}
+
+.menu ul li a {
+    font-size: 16px;
+    color: #fff;
+
+}
+
+
+
+
+.registro {
+    display: flex;
+    margin-left: 20px;
+    text-transform: uppercase;
+}
+
+#Inicio {
+    background: #3a97bc;
+    padding: 10px 30px;
+    border-radius: 20px;
+    box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+}
+
+#Registro {
+    background: rgb(87, 123, 124);
+    padding: 10px 30px;
+    border-radius: 20px;
+    box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+}
+
+/*portada*/
+
+.container--portada {
+    width: 100%;
+    height: 800px;
+}
+
+.portada {
+    max-width: 1200px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.container--portada .texto {
+    max-width: 500px;
+
+}
+
+.container--portada .texto h1 {
+    font-size: 40px;
+    font-weight: 800;
+    background: linear-gradient(142deg, rgba(251,63,215,1) 2%, rgba(70,252,235,1) 100%);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.container--portada .texto p {
+    font-size: 20px;
+    margin-top: 30px;
+    color: #3a97bc;
+
+}
+
+.container--portada .texto input {
+    padding: 20px 80px;
+    border: none;
+    font-size: 15px;
+    border-radius: 50px;
+    margin-top: 40px;
+    background:#8423ac;
+    color:midnightblue;
+    cursor: pointer;
+    box-shadow: 2px 2px 20px -15px #fff;
+    transition: 1s;
+}
+
+.container--portada .texto input:hover {
+    box-shadow: 2px 2px 20px -1px #fff
+
+}
+
+.container--portada .image-portada img {
+    width: 800px;
+    animation: move-vector 4s linear infinite ;
+}
+
+@keyframes move-vector {
+    0% {
+        transform:translateY(15px);
+    }50% {
+        transform: translateY(0px);
+    }100% {
+        transform: translateY(15px);
+    }
+}
+
+
+.container-about {
+    width: 100%;
+    height: 300px;
+}
+
+.about {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about h2 {
+    font-size: 60px;
+    color: #3a97bc;
+    text-transform: uppercase;
+}
+
+.about p {
+    margin: 200px;
+    font-size: 20px;
+    margin-top: 30px;
+    color: #3a97bc;
+}
+
+.container-cards img {
+    width: 100%;
+    height: auto;
+}
+
+.container-cards {
+    display: grid;
+    padding: 2rem;
+    place-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 1fr;
+    gap: 10px;
+}
+
+.card {
+    position: relative;
+}
+
+.titulo {
+    background:#3a97bc;
+    z-index: 1;
+    border-radius: 15px;
+}
+
+.imagen {
+    line-height: 0;
+}
+
+.titulo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(27, 165, 225, 0.4);
+    color: rgb(248, 248, 248);
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity .5s;
+}
+
+.card:hover .titulo {
+    opacity: 1;
+}
+
+.imagen img {
+    filter: blur(0px);
+    transition: filter 0.3s ease-in;
+}
+
+.card:hover .imagen img {
+    filter: blur(2px);
+}
+
+
+.button-nucleo {
+    background-color: #8423ac;
+    padding: 5px 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 30px;
+    color: #86c7e1;
+}
+
+.contact_form {  
+    width: 460px; 
+    height: auto;
+    margin: 80px auto;
+    border-radius: 10px;  
+    padding-top: 30px;
+    padding-bottom: 20px;  
+    background-color:#3a97bc8a; 
+    padding-left: 30px; 
+}
+
+.beneficios-f {
+    max-width: 1200px;
+    margin: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.beneficios-f h2 {
+    font-size: 60px;
+    color: #3a97bc;
+    text-transform: uppercase;
+}
+
+.beneficios-f p {
+    margin: 100px;
+    font-size: 20px;
+    margin-top: 20px;
+    color: #3a97bc;
+    text-align: center;
+}
+
+
+.input-f {
+    background-color:#86c7e1; 
+    width: 408px; 
+    height: 40px; 
+    border-radius: 5px;  
+    border-style: solid; 
+    border-width: 1px; 
+    border-color: #ab4493; 
+    margin-top: 10px;  
+    padding-left: 10px;
+    margin-bottom: 20px; 
+}
+
+
+textarea {
+    background-color: #fbfbfb; 
+    width: 405px; 
+    height: 150px; 
+    border-radius: 5px;  
+    border-style: solid; 
+    border-width: 1px; 
+    border-color: #ab4493; 
+    margin-top: 10px;  
+    padding-left: 10px;
+    margin-bottom: 20px; 
+    padding-top: 15px; 
+}
+
+
+label {
+    display: block; 
+    float: center;  
+}
+
+
+.button1 {
+    height: 45px; 
+    padding-left: 5px;
+    padding-right: 5px;   
+    margin-bottom: 20px; 
+    margin-top: 10px;   
+    text-transform: uppercase;
+    background-color: #ab4493; 
+    border-color: #ab4493; 
+    border-style: solid; 
+    border-radius: 10px;  
+    width: 420px;   
+    cursor: pointer;
+}
+
+button p {
+    color: #fff; 
+}
+
+
+span {
+    color: #ab4493; 
+}
+
+.aviso {
+    font-size: 13px;  
+    color: #0e0e0e;  
+}
+
+h3{
+    font-size: 39px;  
+    text-align: letf; 
+    padding-bottom: 20px; 
+    color: #ab4493;
+}
+
+h4{
+    font-size: 16px; 
+    padding-bottom: 30px;
+    color: #0e0e0e;   
+}
+
+p{
+    font-size: 14px; 
+    color: #0e0e0e; 
+}
+
+
+    .formulario input:focus{
+    outline:0;
+    border: 1px solid #97d848;
+}
+
+.formulario textarea:focus{
+    outline:0;
+    border: 1px solid #97d848;
+}
+
+.mapa {
+    border-radius: 20px;
+}
+
+footer {
+    width: 100%;
+    background: rgb(251,63,215);
+    background: linear-gradient(142deg, rgba(251,63,215,1) 2%, rgba(70,252,235,1) 100%);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.container-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.box-footer {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.box-footer .logo img {
+    width: 100px;
+}
+
+.box-footer .términos p {
+    max-width: 350px;
+    font-weight: 500;
+    color: rgb(108, 108, 108);
+    font-size: 18px;
+}
+
+.box-footer h4 {
+    margin-bottom: 30px;
+    color: rgb(44, 43, 43);
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.box-footer a {
+    margin-top: 10px;
+    color: rgb(98, 98, 98);
+    font-weight: 600;
+}
+
+.box-footer a:hover {
+    opacity: 0.8;
+}
+
+.box-footer a .fab {
+    font-size: 20px;
+}
+
+.box-copyright {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 40px;
+}
+
+.box-copyright p {
+    margin-top: 10px;
+    color: rgb(68, 67, 67);
+}
+
+.box-copyright hr {
+    border: none;
+    height: 1px;
+    background-color: #056c94;
+}
+
+
+
+
+
