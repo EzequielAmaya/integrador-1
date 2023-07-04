@@ -1,13 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:wght@600&display=swap');
 
-body {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Nunito', sans-serif;
     text-decoration: none;
+}
+
+body {
     background: url(../image-register/register-img.jpg) no-repeat center top ;
-    background-size: cover;
 }
 
 .registro {
@@ -69,4 +71,13 @@ body {
     margin: 10px 0px;
     font-size: 16px;
     border-radius: 10px;
+}
+
+@media (max-width: 568px ) {
+
+    .registro {
+        width: 370px;
+    }
+
+    
 }
