@@ -111,6 +111,14 @@
 }
 @media (max-width: 576px) {
 
+    .titulo {
+        font-size: 15px;
+    }
+
+    .button-nucleo {
+        font-size: 15px;
+    }
+
     .beneficios-f h2 {
         font-size: 60px;
         margin-bottom: 60px;
@@ -150,7 +158,4 @@
     .button1 {
         width: 300px;
     }
-
-
-
 }
